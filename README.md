@@ -1,4 +1,4 @@
-#  Image Classification using K-Nearest Neighbors (KNN)
+#  IMPLEMENTASI KLASIFIKASI CITRA DAUN SEHAT DAN SAKIT MENGGUNAKAN METODE K-NEAREST NEIGHBOR (KNN)
 
 ##  Description
 
