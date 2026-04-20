@@ -93,7 +93,8 @@ The system is able to classify images based on similarity using KNN algorithm. T
 ---
 
 ##  Author
-KELOMPOK 8
-Nama: Abdullah Muhammad Muttaqim
-NIM: 22EO10034
+### KELOMPOK 8
+#### Anggota:
+* Abdullah Muhammad Muttaqim (22EO10034)
+* Feri Ages Refangga (22EO10031)
 Universitas: Universitas Nahdlatul Ulama Al Ghazali Cilacap
