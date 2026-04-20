@@ -36,6 +36,6 @@ test_img = cv2.imread("test/test.jpg")
 test_img = cv2.resize(test_img, (64, 64))
 test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
-prediction = knn.predict([test_img.flatten()])
+prediction = knn.predict(test_img.flatten().reshape(1, -1))
 
 print("Hasil:", prediction[0])
