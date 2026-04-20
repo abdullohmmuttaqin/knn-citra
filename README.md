@@ -98,6 +98,6 @@ The system is able to classify images based on similarity using KNN algorithm. T
 * Abdullah Muhammad Muttaqim (22EO10034)
 * Feri Ages Refangga (22EO10031)
 
-##  Program Studi Informatika 
-##  Fakultas Matematika Dan Ilmu Komputer 
-##  Universitas Nahdlatul Ulama Al Ghazali Cilacap
+###  Program Studi Informatika 
+###  Fakultas Matematika Dan Ilmu Komputer 
+###  Universitas Nahdlatul Ulama Al Ghazali Cilacap
