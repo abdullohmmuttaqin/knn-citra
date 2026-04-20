@@ -30,7 +30,7 @@ Proses klasifikasi mengikuti langkah-langkah berikut:
 
 ---
 
-##  Project Structure
+##  Struktur Proyek
 
 ```
 knn-citra/
@@ -48,7 +48,7 @@ knn-citra/
 
 ---
 
-## ▶ How to Run
+##  How to Run
 
 1. Clone this repository:
 
