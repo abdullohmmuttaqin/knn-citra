@@ -46,7 +46,7 @@ if test_img is None:
 test_img = cv2.resize(test_img, (64, 64))
 test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
-# FIX DI SINI 🔥
+# FIX DI SINI 
 test_data = test_img.flatten().reshape(1, -1)
 
 prediction = knn.predict(test_data)
