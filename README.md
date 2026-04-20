@@ -1,22 +1,22 @@
 #  IMPLEMENTASI KLASIFIKASI CITRA DAUN SEHAT DAN SAKIT MENGGUNAKAN METODE K-NEAREST NEIGHBOR (KNN)
 
-##  Description
+##  Deskripsi
 
-This project implements image classification using the K-Nearest Neighbors (KNN) algorithm in Python. The system is able to classify images into predefined categories based on similarity.
+Proyek ini mengimplementasikan klasifikasi gambar menggunakan algoritma K-Nearest Neighbors (KNN) dalam Python. Sistem ini mampu mengklasifikasikan gambar ke dalam kategori yang telah ditentukan berdasarkan kemiripan.
 
-This project was developed as part of the **Pengolahan Citra** course assignment.
+Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pengolahan Citra**.
 
 ---
 
-##  Method
+##  Metode
 
-The classification process follows these steps:
+Proses klasifikasi mengikuti langkah-langkah berikut:
 
-1. Image Acquisition (Dataset)
-2. Preprocessing (Resize & Grayscale)
-3. Feature Extraction (Flatten Image)
-4. Classification using K-Nearest Neighbors (KNN)
-5. Prediction Result
+1. Akuisisi Gambar (Dataset)
+2. Praproses (Ubah Ukuran & Skala Abu-abu)
+3. Ekstraksi Fitur (Ratakan Gambar)
+4. Klasifikasi menggunakan K-Nearest Neighbors (KNN)
+5. Hasil Prediksi
 
 ---
 
