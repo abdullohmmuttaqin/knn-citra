@@ -96,9 +96,9 @@ test_data = test_img.flatten().reshape(1, -1) / 255.0
 
 prediction = knn.predict(test_data)
 
-print("Hasil:", prediction[0])
-
 plt.imshow(test_img, cmap='gray')
 plt.title(f"Hasil: {prediction[0]}")
 plt.axis('off')
 plt.show()
+
+print("Hasil:", prediction[0])
