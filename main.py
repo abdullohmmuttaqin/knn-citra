@@ -59,7 +59,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # =========================
 # TRAIN MODEL KNN
 # =========================
-knn = KNeighborsClassifier(n_neighbors=3)
+knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(X_train, y_train)
 
 # =========================
