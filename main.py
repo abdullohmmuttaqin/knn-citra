@@ -1,10 +1,13 @@
 import cv2
 import numpy as np
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
+
 
 data = []
 labels = []
@@ -68,6 +71,11 @@ print("Akurasi:", accuracy * 100, "%")
 
 cm = confusion_matrix(y_test, y_pred)
 
+sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.show()
 print("Confusion Matrix:")
 print(cm)
 
@@ -89,3 +97,8 @@ test_data = test_img.flatten().reshape(1, -1) / 255.0
 prediction = knn.predict(test_data)
 
 print("Hasil:", prediction[0])
+
+plt.imshow(test_img, cmap='gray')
+plt.title(f"Hasil: {prediction[0]}")
+plt.axis('off')
+plt.show()
