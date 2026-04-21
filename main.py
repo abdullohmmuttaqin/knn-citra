@@ -4,6 +4,7 @@ import os
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
 
 data = []
 labels = []
@@ -64,6 +65,11 @@ y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 
 print("Akurasi:", accuracy * 100, "%")
+
+cm = confusion_matrix(y_test, y_pred)
+
+print("Confusion Matrix:")
+print(cm)
 
 # =========================
 # TEST GAMBAR BARU
