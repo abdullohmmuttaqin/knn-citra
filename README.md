@@ -78,13 +78,13 @@ Hasil: kucing
 
 ---
 
-##  Result
+##  Hasil
 
-The system is able to classify images based on similarity using KNN algorithm. The performance depends on the dataset size and the value of K.
+Sistem ini mampu mengklasifikasikan gambar berdasarkan kemiripan menggunakan algoritma KNN. Kinerjanya bergantung pada ukuran dataset dan nilai K.
 
 ---
 
-##  References
+##  Referensi
 
 * Scikit-learn Documentation
 * OpenCV Documentation
