@@ -8,7 +8,9 @@ from sklearn.metrics import accuracy_score
 data = []
 labels = []
 
-# Load dataset
+# =========================
+# LOAD DATASET
+# =========================
 dataset_path = "dataset"
 
 for label in os.listdir(dataset_path):
@@ -21,21 +23,50 @@ for label in os.listdir(dataset_path):
         if img is None:
             continue
 
+        # Resize & grayscale
         img = cv2.resize(img, (64, 64))
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
+        # Flatten
         data.append(img.flatten())
         labels.append(label)
 
-# Ubah ke array
+# =========================
+# PREPROCESSING
+# =========================
 data = np.array(data)
+labels = np.array(labels)
 
-# Model KNN
-knn = KNeighborsClassifier(n_neighbors=3)
-knn.fit(data, labels)
+# Normalisasi (biar akurat)
+data = data / 255.0
+
+# Info dataset
+print("Jumlah data:", len(data))
+print("Jumlah label:", len(labels))
 
 # =========================
-# TEST GAMBAR
+# SPLIT DATA
+# =========================
+X_train, X_test, y_train, y_test = train_test_split(
+    data, labels, test_size=0.2, random_state=42
+)
+
+# =========================
+# TRAIN MODEL KNN
+# =========================
+knn = KNeighborsClassifier(n_neighbors=3)
+knn.fit(X_train, y_train)
+
+# =========================
+# HITUNG AKURASI
+# =========================
+y_pred = knn.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+
+print("Akurasi:", accuracy * 100, "%")
+
+# =========================
+# TEST GAMBAR BARU
 # =========================
 test_img = cv2.imread("test/test.jpg")
 
@@ -46,8 +77,8 @@ if test_img is None:
 test_img = cv2.resize(test_img, (64, 64))
 test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 
-# FIX DI SINI 
-test_data = test_img.flatten().reshape(1, -1)
+# Flatten + reshape + normalisasi
+test_data = test_img.flatten().reshape(1, -1) / 255.0
 
 prediction = knn.predict(test_data)
 
