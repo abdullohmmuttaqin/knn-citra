@@ -8,6 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, confusion_matrix
+from datetime import datetime
 
 
 # Inisialisasi data
@@ -113,7 +114,8 @@ plt.title("SVM")
 
 plt.tight_layout()
 
-plt.savefig("output/confusion_matrix.png")
+now = datetime.now().strftime("%Y%m%d_%H%M%S")
+plt.savefig(f"output/confusion_matrix_{now}.png")
 
 plt.show()
 
@@ -135,11 +137,6 @@ print("Prediksi SVM:", pred_svm[0])
 
 # Tampilkan gambar test
 # =================
-
-plt.imshow(test_img, cmap='gray')
-plt.title("Test Image")
-plt.axis('off')
-plt.show()
 
 plt.imshow(test_img, cmap='gray')
 plt.title(f"KNN: {pred_knn[0]} | SVM: {pred_svm[0]}")
