@@ -113,7 +113,7 @@ plt.title("SVM")
 
 plt.tight_layout()
 
-plt.savefig("output/confusion_mateix.png")
+plt.savefig("output/confusion_matrix.png")
 
 plt.show()
 
