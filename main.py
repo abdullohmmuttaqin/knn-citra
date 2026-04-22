@@ -120,7 +120,7 @@ plt.show()
 # Test gambar baru
 # =================
 
-test_img = cv2.imread("test/test.img")
+test_img = cv2.imread("test/test.jpg")
 
 test_img = cv2.resize(test_img, (64, 64))
 test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
