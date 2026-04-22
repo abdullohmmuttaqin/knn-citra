@@ -132,3 +132,11 @@ pred_svm = svm.predict(test_data)
 
 print("Prediksi KNN:", pred_knn[0])
 print("Prediksi SVM:", pred_svm[0])
+
+# Tampilkan gambar test
+# =================
+
+plt.imshow(test_img, cmap='gray')
+plt.title("Test Image")
+plt.axis('off')
+plt.show()
