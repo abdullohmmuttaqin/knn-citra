@@ -36,8 +36,8 @@ Proses klasifikasi mengikuti langkah-langkah berikut:
 knn-citra/
 │
 ├── dataset/
-│   ├── kucing/
-│   └── anjing/
+│   ├── daunSakit/
+│   └── daunSehat/
 │
 ├── test/
 │   └── test.jpg
