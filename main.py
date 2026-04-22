@@ -140,3 +140,8 @@ plt.imshow(test_img, cmap='gray')
 plt.title("Test Image")
 plt.axis('off')
 plt.show()
+
+plt.imshow(test_img, cmap='gray')
+plt.title(f"KNN: {pred_knn[0]} | SVM: {pred_svm[0]}")
+plt.axis('off')
+plt.show()
