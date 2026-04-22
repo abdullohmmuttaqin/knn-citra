@@ -93,7 +93,7 @@ Sistem ini mampu mengklasifikasikan gambar berdasarkan kemiripan menggunakan alg
 ---
 
 ##  Author
-### KELOMPOK 8
+## KELOMPOK 8
 #### Anggota:
 * Abdullah Muhammad Muttaqim (22EO10034)
 * Feri Ages Refangga (22EO10031)
