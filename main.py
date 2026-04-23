@@ -135,7 +135,9 @@ test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
 # Deteksi tepi untuk test image
 test_edges = cv2.Canny(test_img, 100, 200)
 
-test_data = test_img.flatten().reshape(1, -1)
+# Gabungkan fitur tes image
+test_combined = np.hstack((test_img.flatten(), test_edges.flatten()))
+test_data = test_combined.reshap(1, -1)
 
 pred_knn = knn.predict(test_data)
 pred_svm = svm.predict(test_data)
