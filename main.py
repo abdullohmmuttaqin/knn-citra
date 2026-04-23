@@ -46,8 +46,12 @@ for label in os.listdir(dataset_path):
         #ubah ke grayscale
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-        #ubah jadi array 1 dimensi
-        data.append(img.flatten())
+        # deteksi tepi (fitur tambahan biar model agak pinter)
+        edges = cv2.Canny(img, 100, 200)
+
+        #gabungkan grayscale + edge jadi 1 fitur
+        combined = np.hstack((img.flatten(), edges.flatten()))
+        data.append(combined)
 
         #simpan label
         labels.append(label)
