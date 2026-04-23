@@ -1,22 +1,24 @@
-#  Perbandingan Kinerja Algoritma K-Nearest Neighbor (KNN) dan Support Vector Machine (SVM) dalam Klasifikasi Citra Daun Sehat dan Sakit
+#   Klasifikasi Citra Daun Sehat dan Sakit Menggunakan Algoritma K-Nearest Neighbor (KNN) dan Support Vector Machine (SVM)
 
 ##  Deskripsi
 
-Proyek ini mengimplementasikan klasifikasi gambar menggunakan algoritma K-Nearest Neighbors (KNN) dalam Python. Sistem ini mampu mengklasifikasikan gambar ke dalam kategori yang telah ditentukan berdasarkan kemiripan.
+Project ini merupakan implementasi klasifikasi citra daun sehat dan daun sakit menggunakan algoritma Machine Learning, yaitu K-Nearest Neighbor (KNN) dan Support Vector Machine (SVM).
+
+Selain itu, dilakukan perbandingan kinerja kedua algoritma berdasarkan nilai akurasi dan confusion matrix.
 
 Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pengolahan Citra**.
 
 ---
 
-##  Metode
 
-Proses klasifikasi mengikuti langkah-langkah berikut:
-
-1. Akuisisi Gambar (Dataset)
-2. Praproses (Ubah Ukuran & Skala Abu-abu)
-3. Ekstraksi Fitur (Ratakan Gambar)
-4. Klasifikasi menggunakan K-Nearest Neighbors (KNN)
-5. Hasil Prediksi
+## Fitur
+- Preprocessing citra (resize dan grayscale)
+- Ekstraksi fitur (grayscale + edge detection)
+- Implementasi algoritma KNN
+- Implementasi algoritma SVM
+- Perbandingan performa model
+- Visualisasi confusion matrix
+- Prediksi gambar baru
 
 ---
 
@@ -33,17 +35,17 @@ Proses klasifikasi mengikuti langkah-langkah berikut:
 ##  Struktur Proyek
 
 ```
-knn-citra/
-│
-├── dataset/
-│   ├── daunSakit/
-│   └── daunSehat/
-│
-├── test/
-│   └── test.jpg
-│
-├── main.py
-└── README.md
+dataset/
+├── daunSehat/
+├── daunSakit/
+
+test/
+└── test.jpg
+
+output/
+
+main.py
+README.md
 ```
 
 ---
@@ -80,7 +82,12 @@ Hasil: kucing
 
 ##  Hasil
 
-Sistem ini mampu mengklasifikasikan gambar berdasarkan kemiripan menggunakan algoritma KNN. Kinerjanya bergantung pada ukuran dataset dan nilai K.
+## Hasil
+
+Program menghasilkan:
+- Akurasi KNN dan SVM
+- Visualisasi confusion matrix
+- Prediksi citra uji (test image)
 
 ---
 
