@@ -75,12 +75,11 @@ python main.py
 ##  Example Output
 
 ```
-Hasil: kucing
+Hasil: daunSehat
 ```
 
 ---
 
-##  Hasil
 
 ## Hasil
 
