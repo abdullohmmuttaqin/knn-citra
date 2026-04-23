@@ -137,7 +137,7 @@ test_edges = cv2.Canny(test_img, 100, 200)
 
 # Gabungkan fitur tes image
 test_combined = np.hstack((test_img.flatten(), test_edges.flatten()))
-test_data = test_combined.reshap(1, -1)
+test_data = test_combined.reshape(1, -1)
 
 pred_knn = knn.predict(test_data)
 pred_svm = svm.predict(test_data)
