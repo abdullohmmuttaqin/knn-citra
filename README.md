@@ -1,4 +1,4 @@
-#  IMPLEMENTASI KLASIFIKASI CITRA DAUN SEHAT DAN SAKIT MENGGUNAKAN METODE K-NEAREST NEIGHBOR (KNN)
+#  Perbandingan Kinerja Algoritma K-Nearest Neighbor (KNN) dan Support Vector Machine (SVM) dalam Klasifikasi Citra Daun Sehat dan Sakit
 
 ##  Deskripsi
 
