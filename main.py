@@ -51,6 +51,7 @@ for label in os.listdir(dataset_path):
 
         #gabungkan grayscale + edge jadi 1 fitur
         combined = np.hstack((img.flatten(), edges.flatten()))
+        
         data.append(combined)
 
         #simpan label
