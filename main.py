@@ -51,7 +51,7 @@ for label in os.listdir(dataset_path):
 
         #gabungkan grayscale + edge jadi 1 fitur
         combined = np.hstack((img.flatten(), edges.flatten()))
-        
+
         data.append(combined)
 
         #simpan label
@@ -131,6 +131,9 @@ test_img = cv2.imread("test/test.jpg")
 
 test_img = cv2.resize(test_img, (64, 64))
 test_img = cv2.cvtColor(test_img, cv2.COLOR_BGR2GRAY)
+
+# Deteksi tepi untuk test image
+test_edges = cv2.Canny(test_img, 100, 200)
 
 test_data = test_img.flatten().reshape(1, -1)
 
