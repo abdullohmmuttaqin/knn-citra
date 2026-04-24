@@ -99,6 +99,7 @@ Program menghasilkan:
 #### Anggota:
 * Abdullah Muhammad Muttaqim (22EO10034)
 * Feri Ages Refangga (22EO10031)
+* ANdika Putra Pratama (22EO10009)
 
 ##  Program Studi Informatika 
 ##  Fakultas Matematika Dan Ilmu Komputer 
