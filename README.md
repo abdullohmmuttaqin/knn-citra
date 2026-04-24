@@ -2,11 +2,7 @@
 
 ##  Deskripsi
 
-Project ini merupakan implementasi klasifikasi citra daun sehat dan daun sakit menggunakan algoritma Machine Learning, yaitu K-Nearest Neighbor (KNN) dan Support Vector Machine (SVM).
-
-Selain itu, dilakukan perbandingan kinerja kedua algoritma berdasarkan nilai akurasi dan confusion matrix.
-
-Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pengolahan Citra**.
+Project ini merupakan implementasi klasifikasi citra daun sehat dan daun sakit menggunakan algoritma Machine Learning, yaitu **K-Nearest Neighbor (KNN)** dan **Support Vector Machine (SVM)**. Selain itu, dilakukan perbandingan kinerja kedua algoritma berdasarkan nilai akurasi dan confusion matrix.Proyek ini dikembangkan sebagai bagian dari tugas mata kuliah **Pengolahan Citra**.
 
 ---
 
