@@ -95,11 +95,14 @@ Program menghasilkan:
 ---
 
 ##  Author
-## KELOMPOK 8
+## Tim 8
 #### Anggota:
 * Abdullah Muhammad Muttaqim (22EO10034)
 * Feri Ages Refangga (22EO10031)
 * Andika Putra Pratama (22EO10009)
+* Nur Hidayat (22EO10002)
+* Fika Maulana (22EO10005)
+* Akmal Ubaidillah (22EO10030)
 
 ##  Program Studi Informatika 
 ##  Fakultas Matematika Dan Ilmu Komputer 
